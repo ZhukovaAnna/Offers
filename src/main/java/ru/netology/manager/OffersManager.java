@@ -31,7 +31,7 @@ public class OffersManager {
         return result;
     }
 
-    public Offers[] findAllSortByTime(String from, String to, Comparator<Offers> comparator) {
+    public Offers[] findAllSortByComparator(String from, String to, Comparator<Offers> comparator) {
         Offers[] result = new Offers[0];
         for (Offers ticket : repository.findAll()) {
             if (ticket.getFrom().equalsIgnoreCase(from) && ticket.getTo().equalsIgnoreCase(to)) {

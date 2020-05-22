@@ -1,11 +1,13 @@
 package ru.netology.repository;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import ru.netology.domain.Offers;
 
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 public class OffersRepository {
 
     private Offers[] tickets = new Offers[0];
