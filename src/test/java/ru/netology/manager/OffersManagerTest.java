@@ -50,7 +50,7 @@ class OffersManagerTest {
     }
 
     @Test
-    void shouldReturnEmpryIfNotContain() {
+    void shouldReturnEmptyIfNotContain() {
         manager = new OffersManager(repository);
         manager.offersAdd(offers1);
         manager.offersAdd(offers2);

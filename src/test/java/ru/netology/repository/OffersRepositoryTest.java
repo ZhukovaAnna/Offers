@@ -34,7 +34,6 @@ class OffersRepositoryTest {
     void shouldFindIfExist() {
         repository.save(offers4);
         int idToFind = 4;
-        repository.findById(idToFind);
         Offers expected = offers4;
         Offers actual = repository.findById(idToFind);
         assertEquals(expected, actual);
@@ -43,7 +42,6 @@ class OffersRepositoryTest {
     @Test
     void shouldNotFindByNotExist() {
         int idToFind = 3;
-        repository.findById(idToFind);
         Offers actual = repository.findById(idToFind);
         assertNull(actual);
     }
